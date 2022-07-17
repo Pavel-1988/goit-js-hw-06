@@ -15,41 +15,8 @@ const images = [
 
 const imagesGal = document.querySelector(".gallery")
 
-
-
-const elements = images.map((element) => `<li> <img src =${element.url} alt =${element.alt} width = "150" height = "100" ></li>`).join("")
+const elements = images.map((element) => `<li> <img src =${element.url} alt =${element.alt} width = "250" height = "150" ></li>`).join("")
 imagesGal.insertAdjacentHTML("afterbegin", elements);
+imagesGal.setAttribute("style", "list-style-type:none");
 
 
-
-
-
-
-
-
-
-
-//*=======================
-
-// const createGalleryItem = ({ url, alt }) =>
-//   `<li><img src="${url}" alt="${alt}" width = 200 height = 150></li>`;
-// const galleryMarkup = images.reduce(
-//   (acc, item) => acc + createGalleryItem(item),
-//   ""
-// );
-// const galleryList = document.querySelector(".gallery");
-// galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
-// galleryList.setAttribute("style", "list-style-type:none; display: flex; padding: 20px");
-
-
-//*====================
-
-// images.forEach(el => {
-//   imagesGal.insertAdjacentHTML( //  Для создания разметки используй шаблонные строки и метод insertAdjacentHTML().
-//     'afterbegin',
-//     `<li><img src = "${el.url}" alt = "${el.alt}"  width = "150" height = "100" ></li>`,
-//   // Используй массив объектов images для создания элементов <img> вложенных в <li>
-//   );
-// });
-
-// imagesGal.setAttribute("style", "list-style-type:none");

@@ -8,19 +8,13 @@ const counter = document.querySelector("#value");
 
 const minusClick = () => {
     counterValue -= 1;
-    
     counter.textContent = counterValue
 };
-
 
 const plusClick = () => {
     counterValue += 1;
-    
     counter.textContent = counterValue
 };
-
-
-
 
 minusBtn.addEventListener("click", minusClick )
 plusBtn.addEventListener("click", plusClick )
